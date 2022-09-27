@@ -1,0 +1,353 @@
+/* font-style */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins&family=Roboto+Condensed&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+body {
+    /* font-style */
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tiro Bangla', serif;
+    /* font-style end */
+
+    margin: 0;
+
+}
+
+
+/* common-style */
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* top part start */
+
+.top-banner {
+    display: flex;
+    justify-content: space-evenly;
+
+    background: #161616;
+    border-radius: 30px;
+
+    margin-top: 3em;
+}
+
+/* .banner-blog-position {
+    position: relative;
+    top: 3em;
+} */
+
+.top-blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+
+
+    /* flex-direction: column; */
+
+
+
+    width: 443px;
+    height: 410px;
+
+    /* border: 2px solid blue; */
+}
+
+.top-blog h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.top-blog p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 3em;
+
+
+}
+
+#mini-one {
+
+    width: 441px;
+    height: 115px;
+    ;
+
+    border: 2px solid blue;
+}
+
+.top-blog a {
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    padding: 3%;
+}
+
+
+.player-img img {
+    margin-top: 20px;
+    width: 100%;
+    height: 28em;
+}
+
+
+/*--------------
+      2nd part
+  ------------- */
+#all-view {
+    margin-top: 5em;
+
+}
+
+#aside-grow {
+    display: flex;
+
+}
+
+.aside {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-row-gap: 10px;
+
+
+    width: 312px;
+    height: 312px;
+    border: 2px solid blue;
+    border-radius: 1em;
+    /* c-s-e */
+    background-color: #161616;
+    margin-top: 14px;
+    padding: 2em;
+
+    text-align: center;
+
+}
+
+.link-button>a>.l-b:hover {
+    background-color: red;
+    color: white;
+
+}
+
+#Match,
+#Group,
+#Blog {
+    width: 300px;
+    height: 70px;
+
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+    border-radius: 8px;
+}
+
+.grow {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 440px;
+    height: 1186px;
+
+    flex-grow: 1;
+
+    /* border: 2px solid blue; */
+
+    /* c-s-e */
+    margin-left: 5px;
+    padding: 1em;
+
+
+
+}
+
+.blog {
+    width: 312px;
+    height: 362px;
+    padding: 5px;
+    border-radius: 8px;
+    /* border: 2px solid blue; */
+
+    box-shadow: 5px 5px 8px gray;
+}
+
+
+
+.blog>div>button>a {
+    text-decoration: none;
+}
+
+.blog>div>button> {
+    width: 105px;
+    height: 35px;
+
+}
+
+.blog>#blog-text>p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.blog>#blog-icon {
+
+    display: flex;
+
+}
+
+.blog>#blog-icon>#mess {
+    margin-left: 30px;
+
+
+
+}
+
+
+
+/* footer */
+
+footer {
+    height: 400px;
+    background-color: #161616;
+}
+
+.Goal,
+.ad {
+    color: white;
+    text-align: center;
+}
+
+.Goal {
+    width: 100%;
+    height: 50%;
+
+
+
+
+    /* border: 2px solid blue; */
+}
+
+hr {
+    width: 1332px;
+}
+
+.Goal>h1 {
+    padding: 8%;
+    margin-bottom: 0%;
+
+
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.ad {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ad>.ad-item {
+    width: 167px;
+    font-size: 21px;
+    height: 50%;
+    color: white;
+
+    /* border: 2px solid blue; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .top-banner. {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #ellipsis p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .player-img {
+        width: 100%;
+
+    }
+}
+
+/* secend part  */
+
+
+
+
+
+
+
+}
+
+/* 
+@media only screen and (max-width:) and (min-width: 992px) {
+
+    .top-banner {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .top-blog {
+        padding: 2em;
+    }
+}
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-blog p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+}
