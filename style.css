@@ -41,25 +41,16 @@ main {
     margin-top: 3em;
 }
 
-/* .banner-blog-position {
-    position: relative;
-    top: 3em;
-} */
-
 .top-blog {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-content: center;
 
-
-    /* flex-direction: column; */
-
-
-
     width: 443px;
     height: 410px;
 
-    /* border: 2px solid blue; */
+    padding: 2%;
+
 }
 
 .top-blog h1 {
@@ -79,20 +70,12 @@ main {
 
 }
 
-#mini-one {
-
-    width: 441px;
-    height: 115px;
-    ;
-
-    border: 2px solid blue;
-}
-
 .top-blog a {
     text-decoration: none;
     color: white;
+    width: 25%;
     background-color: #DD0000;
-    padding: 3%;
+    padding: 5%;
 }
 
 
@@ -120,19 +103,14 @@ main {
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-
     grid-row-gap: 10px;
-
-
     width: 312px;
     height: 312px;
     border: 2px solid blue;
     border-radius: 1em;
-    /* c-s-e */
     background-color: #161616;
     margin-top: 14px;
     padding: 2em;
-
     text-align: center;
 
 }
@@ -140,15 +118,13 @@ main {
 .link-button>a>.l-b:hover {
     background-color: red;
     color: white;
-
 }
 
 #Match,
 #Group,
 #Blog {
-    width: 300px;
+    width: 95%;
     height: 70px;
-
     font-size: 26px;
     font-weight: 700;
     color: black;
@@ -156,35 +132,22 @@ main {
 }
 
 .grow {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 440px;
-    height: 1186px;
-
+    grid-gap: 1em;
     flex-grow: 1;
 
-    /* border: 2px solid blue; */
-
-    /* c-s-e */
-    margin-left: 5px;
+    width: 440px;
+    height: 1186px;
     padding: 1em;
-
-
 
 }
 
 .blog {
-    width: 312px;
-    height: 362px;
-    padding: 5px;
     border-radius: 8px;
-    /* border: 2px solid blue; */
 
     box-shadow: 5px 5px 8px gray;
 }
-
-
 
 .blog>div>button>a {
     text-decoration: none;
@@ -202,21 +165,16 @@ main {
 }
 
 .blog>#blog-icon {
-
     display: flex;
-
 }
 
 .blog>#blog-icon>#mess {
     margin-left: 30px;
-
-
-
 }
 
-
-
-/* footer */
+/* --------------
+    footer
+------------- */
 
 footer {
     height: 400px;
@@ -233,38 +191,33 @@ footer {
     width: 100%;
     height: 50%;
 
-
-
-
-    /* border: 2px solid blue; */
 }
 
 hr {
-    width: 1332px;
+    width: 80%;
 }
 
 .Goal>h1 {
     padding: 8%;
     margin-bottom: 0%;
 
-
     font-size: 50px;
     font-weight: 700;
 }
 
 .ad {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-left: 12%;
 
 }
 
 .ad>.ad-item {
-    width: 167px;
-    font-size: 21px;
+    width: 78%;
+    font-size: 22px;
     height: 50%;
     color: white;
-
-    /* border: 2px solid blue; */
 }
 
 
@@ -289,13 +242,86 @@ hr {
 
 @media only screen and (max-width: 576px) {
 
-    .top-banner. {
+    .top-banner,
+    #aside-grow,
+    .grow {
         display: flex;
         flex-direction: column;
+    }
+
+    .grow>.blog {
+        width: 71%;
 
     }
 
-    #ellipsis p {
+    .top-blog {
+        text-align: center;
+        margin: 0;
+        border: 2px solid blue;
+    }
+
+    .top-blog h1 {
+        width: 6em;
+        text-align: center;
+        margin: 0;
+        border: 2px solid blue;
+    }
+
+    .top-blog p {
+        width: 60%;
+
+        /* ellipsis */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 20px;
+    }
+
+    .top-blog a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-blog img {
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:) and (min-width: 992px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* secend part  */
+
+
+
+
+/*    #ellipsis p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -304,37 +330,7 @@ hr {
     .player-img {
         width: 100%;
 
-    }
-}
-
-/* secend part  */
-
-
-
-
-
-
-
-}
-
-/* 
-@media only screen and (max-width:) and (min-width: 992px) {
-
-    .top-banner {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .top-blog {
-        padding: 2em;
-    }
-}
-  */
-
-
-
-
-
+    } */
 
 
 
